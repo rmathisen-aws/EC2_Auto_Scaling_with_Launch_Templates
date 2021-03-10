@@ -29,7 +29,7 @@ User Data: Install, Start, and Enable Apache Web Server \
 &nbsp;&nbsp;&nbsp;&nbsp;*systemctl enable httpd* \
 &nbsp;&nbsp;&nbsp;&nbsp;*echo "`<html> <h1>` Response coming from server `</h1> </ html>`" /var/www/html/index.html*
 
-**3) Create an Auto Scaling Group** <br/>
+**3) Create an Auto Scaling Group which uses the Launch Template to create the EC2 Instances** <br/>
 EC2 → Auto Scaling → Auto Scaling Groups \
 Launch Template: Choose the Launch Template created in Step 3 from the drop down menu. \
 Network: Default VPC & select multiple Subnets \
