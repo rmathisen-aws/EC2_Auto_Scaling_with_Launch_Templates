@@ -1,0 +1,1 @@
+# EC2_Auto_Scaling_with_Launch_Templates
