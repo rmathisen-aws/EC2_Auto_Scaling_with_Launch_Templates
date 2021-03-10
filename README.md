@@ -27,5 +27,6 @@ yum update -y \
 yum install -y httpd \
 systemctl start httpd \
 systemctl enable httpd \
-echo "<html> <h1> Response coming from server </h1> </ html>" /var/www/html/index.html
+echo "`<html> <h1>` Response coming from server `</h1> </ html>`" /var/www/html/index.html
 
+**3) Create an Auto Scaling Group** <br/>
