@@ -7,7 +7,7 @@
 \
 **1) Create a Security Group for a Launch Template.** <br/>
 Navigate to EC2 → Network & Security → Security Groups \
-Create a Security Group which allows Inbound traffic on Port 80 (HTTP) from Custom source 0.0.0.0/0 \
+Create a Security Group which allows Inbound traffic on Port 80 (HTTP) from Custom source 0.0.0.0/0 
 
 **2) Create a Key Pair for the Launch Template.** <br/>
 EC2 → Network & Security → Key Pairs \
