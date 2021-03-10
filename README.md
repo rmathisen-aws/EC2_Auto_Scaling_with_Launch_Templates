@@ -15,4 +15,17 @@ Create a pem (SSH) or ppk (PuTTY) Key Pair
 
 **3) Create the Launch Template.** <br/>
 EC2 → Instances → Launch Template \
-Create a Launch Template using an AMI. For this project, I'll be using 'Amazon Linux 2 AMI (HVM), SSD Volume Type with Architecture: 64-bit (x86)' \
+AMI: Amazon Linux 2 AMI (HVM), SSD Volume Type with Architecture: 64-bit (x86) \
+Instance Type: t2.micro \
+Key Pair: use the Key Pair created in Step 2 \
+Networking Platform: VPC \
+Networking Security Groups: use the SG created in Step 1 \
+User Data: \
+#!/bin/bash \
+sudo su \
+yum update -y \
+yum install -y httpd \
+systemctl start httpd \
+systemctl enable httpd \
+echo "<html> <h1> Response coming from server </h1> </ html>" /var/www/html/index.html
+
