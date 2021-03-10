@@ -20,14 +20,14 @@ Instance Type: t2.micro \
 Key Pair: use the Key Pair created in Step 2 \
 Networking Platform: VPC \
 Networking Security Groups: use the SG created in Step 1 \
-User Data: \
-*#!/bin/bash* \
-*sudo su* \
-*yum update -y* \
-*yum install -y httpd* \
-*systemctl start httpd* \
-*systemctl enable httpd* \
-*echo "`<html> <h1>` Response coming from server `</h1> </ html>`" /var/www/html/index.html*
+User Data: Install, Start, and Enable Apache Web Server \
+&nbsp;&nbsp;&nbsp;&nbsp;*#!/bin/bash* \
+&nbsp;&nbsp;&nbsp;&nbsp;*sudo su* \
+&nbsp;&nbsp;&nbsp;&nbsp;*yum update -y* \
+&nbsp;&nbsp;&nbsp;&nbsp;*yum install -y httpd* \
+&nbsp;&nbsp;&nbsp;&nbsp;*systemctl start httpd* \
+&nbsp;&nbsp;&nbsp;&nbsp;*systemctl enable httpd* \
+&nbsp;&nbsp;&nbsp;&nbsp;*echo "`<html> <h1>` Response coming from server `</h1> </ html>`" /var/www/html/index.html*
 
 **3) Create an Auto Scaling Group** <br/>
 EC2 → Auto Scaling → Auto Scaling Groups \
