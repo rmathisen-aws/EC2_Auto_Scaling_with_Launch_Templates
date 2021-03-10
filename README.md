@@ -32,8 +32,8 @@ User Data: Install, Start, and Enable Apache Web Server \
 **3) Create an Auto Scaling Group** <br/>
 EC2 → Auto Scaling → Auto Scaling Groups \
 Launch Template: Choose the Launch Template created in Step 3 from the drop down menu. \
-Network: Default VPC & select multiple Subnets
-Group Size: Deired: 2, Minimum: 2, Maximum: 2
+Network: Default VPC & select multiple Subnets \
+Group Size: Deired: 2, Minimum: 2, Maximum: 2 \
 Add Tags (identify ASG instances): Key: Name, Value: EC2Instance
 
 **4) Test your Auto Scaling Group!** <br/>
