@@ -30,3 +30,25 @@ systemctl enable httpd \
 echo "`<html> <h1>` Response coming from server `</h1> </ html>`" /var/www/html/index.html
 
 **3) Create an Auto Scaling Group** <br/>
+EC2 → Auto Scaling → Auto Scaling Groups \
+Launch Template: Choose the Launch Template created in Step 3 from the drop down menu. \
+Network: Default VPC & select multiple Subnets
+Group Size: Deired: 2, Minimum: 2, Maximum: 2
+Add Tags (identify ASG instances): Key: Name, Value: EC2Instance
+
+**4) Test your Auto Scaling Group!** <br/>
+EC2 → Instances → Instances
+Terminate an Instance. You will notice your ASG Instance count will drop from 2 to 1 and the Status will be "Updating capacity" once the termination is completed. Then, notice a new Instance will be launched to meet the Desired Capacity. \
+
+If you Stop an Instance, the Instance will be Terminated, and another will be launched to meet the Desired Capacity.
+
+
+
+
+
+
+
+
+
+
+
