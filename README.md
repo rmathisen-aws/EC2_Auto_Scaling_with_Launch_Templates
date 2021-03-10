@@ -38,17 +38,10 @@ Add Tags (identify ASG instances): Key: Name, Value: EC2Instance
 
 **4) Test your Auto Scaling Group!** <br/>
 EC2 → Instances → Instances \
-Terminate an Instance. You will notice your ASG Instance count will drop from 2 to 1 and the Status will be "Updating capacity" once the termination is completed. Then, notice a new Instance will be launched to meet the Desired Capacity. \
+Terminate an Instance. You will notice your ASG Instance count will drop from 2 to 1 and the Status will be "Updating capacity" once the termination is completed. Then, notice a new Instance will be launched to meet the Desired Capacity.
 
 If you Stop an Instance, the Instance will be Terminated, and another will be launched to meet the Desired Capacity.
 
-
-
-
-
-
-
-
-
-
-
+**5) Clean up!!** <br/>
+Delete the Auto Scaling Group. This will also terminate any running instances. \
+Delete the Launch Template.
