@@ -4,7 +4,7 @@
 \
 **Summary:** \
 Attached a Security Group and Key Pair to a Launch Template which is used in an Auto Scaling Group to launch EC2 Instances. \
-Terminating, or Stopping, an instance results in a new instance being launched.
+Terminating, or Stopping, an instance results in a new instance being launched. \
 <br/>
 <br/>
 **Process:** <br/>
