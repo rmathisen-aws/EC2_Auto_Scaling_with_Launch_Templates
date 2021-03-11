@@ -6,8 +6,9 @@
 Attached a Security Group and Key Pair to a Launch Template which is used in an Auto Scaling Group to launch EC2 Instances. Terminating, or Stopping, an instance results in a new instance being launched. \
 <br/>
 **Reason & Reflection:** \
-As someone who is aspiring to work with AWS starting at an entry level position, I think should know how to configure Launch Templates resulting in launching EC2 instances for Auto Scaling Groups. I thought it was interesting to see how the ASG Desired Capacity is maintained and how relatively quickly an instance is spun up after an instance is terminated or stopped.
+As someone who is aspiring to work with AWS starting at an entry level position, I think should know how to configure Launch Templates resulting in launching EC2 instances for Auto Scaling Groups. I thought it was interesting to see how the ASG Desired Capacity is maintained and how relatively quickly an instance is spun up after an instance is terminated or stopped. \
 <br/>
+
 **Process:** <br/>
 \
 **1) Create a Security Group for a Launch Template.** <br/>
