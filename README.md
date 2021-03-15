@@ -1,4 +1,4 @@
-**Title:** EC2 Auto Scaling using Launch Templates\
+**Title:** Launch EC2 Instances in Auto Scaling Groups using Launch Templates\
 **Name:** Robert Mathisen\
 **Date:** 3/10/2021 \
 \
